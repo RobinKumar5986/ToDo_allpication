@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.todoallpication.AddNewTask;
 import com.example.todoallpication.MainActivity;
 import com.example.todoallpication.Models.ToDoModel;
 import com.example.todoallpication.R;
@@ -80,6 +81,10 @@ public class toDoAdapter extends RecyclerView.Adapter<toDoAdapter.MyViewHolder>{
         Bundle bundle=new Bundle();
         bundle.putInt("id",item.getId());
         bundle.putString("task",item.getTask());
+
+        AddNewTask task=new AddNewTask();
+        task.setArguments(bundle);
+        task.show(activity.getSupportFragmentManager(),task.getTag());
 
     }
     public static class MyViewHolder extends  RecyclerView.ViewHolder{

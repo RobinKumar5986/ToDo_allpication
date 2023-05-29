@@ -8,16 +8,16 @@
         android:layout_height="wrap_content"
         android:background="@null"
         android:id="@+id/txtTask"
+        android:textSize="32dp"
+        android:padding="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:hint="New Task"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnSave"
-        android:layout_below="@id/txtTask"
         android:layout_alignParentEnd="true"
         android:backgroundTint="#F57F17"
         android:text="Save"
         />
-
 </RelativeLayout>
